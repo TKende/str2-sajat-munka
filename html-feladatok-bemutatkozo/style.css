@@ -1,0 +1,31 @@
+header {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 18pt;
+    display: block;
+    width: 100%;
+}
+
+#bigimage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+    max-height: 500px;
+}
+
+#imagecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#description {
+    text-align: center;
+    font-size: 15pt;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
