@@ -4,7 +4,6 @@ header {
     padding: 0;
     border: 0;
     font-size: 18pt;
-    display: block;
     width: 100%;
 }
 
@@ -28,4 +27,132 @@ header {
 footer {
     display: flex;
     justify-content: center;
+}
+
+#tulajdonsag {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    margin: 1%;
+}
+
+#boxes:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 10;
+}
+
+ul.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navli {
+    float: left;
+}
+
+li.navli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navli a:hover {
+    background-color: #111;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+@media screen and (min-width: 901px) {
+    #cikk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #kep {
+        flex-basis: 40%;
+        float: left;
+    }
+    #leirras {
+        font-size: 20px;
+        padding-right: 20px;
+        float: right;
+    }
+    #gimg {
+        height: 30vw;
+        width: 20vw;
+        object-fit: fill;
+        margin: 10px;
+        box-shadow: 10px 5px 5px black;
+    }
+    .column {
+        float: left;
+        width: 30.33%;
+        padding: 5px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #cikk {
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #kep {
+        flex-basis: 40%;
+    }
+    #leirras {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    #gimg {
+        height: 90vw;
+        width: 90vw;
+        object-fit: fill;
+        margin: 10px;
+        box-shadow: 10px 5px 5px black;
+    }
+    .column {
+        float: left;
+        width: 100%;
+        padding: 5px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+#aboutbigp {
+    float: left;
+}
+
+#bemutatkozas {
+    font-size: 20px;
+}
+
+#lists {
+    display: block;
 }
