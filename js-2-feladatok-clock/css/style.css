@@ -1,0 +1,29 @@
+        @font-face {
+            font-family: cyber;
+            src: url('/css/Cyberverse.otf') format('opentype');
+        }
+        
+        .clock {
+            align-self: center;
+            background-color: black;
+            font-family: cyber;
+            color: lightblue;
+            text-align: center;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .clock p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25pt;
+        }
