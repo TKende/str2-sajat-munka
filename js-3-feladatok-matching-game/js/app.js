@@ -105,7 +105,7 @@ function timer() {
         document.querySelectorAll('.flip-card').forEach(item => {
             item.setAttribute("onclick", "")
         })
-        setTimeout(location.reload(), 5000)
+        location.reload()
     }
 }
 

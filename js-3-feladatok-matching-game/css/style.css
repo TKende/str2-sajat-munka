@@ -32,6 +32,8 @@
 
 .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 
