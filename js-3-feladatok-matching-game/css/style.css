@@ -1,0 +1,110 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 175px;
+    height: 250px;
+    perspective: 1000px;
+    float: left;
+    margin: 10px;
+    margin-top: 50px;
+    /* Remove this if you don't want the 3D effect
+    
+    border: 1px solid #f1f1f1;
+    */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+*/
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.upper-cards:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-conatiner {
+    float: left;
+    position: relative;
+    left: 24%;
+}
+
+.texts,
+.clock-conatiner {
+    text-align: center;
+}
+
+body {
+    background-color: aqua;
+}
+
+#pic1 .flip-card-back,
+#pic0 .flip-card-back {
+    content: url("/assets/Anarcho-Agrarianism.png");
+}
+
+#pic3 .flip-card-back,
+#pic2 .flip-card-back {
+    content: url('/assets/Amn.png')
+}
+
+#pic5 .flip-card-back,
+#pic4 .flip-card-back {
+    content: url('/assets/Authmon.png')
+}
+
+#pic7 .flip-card-back,
+#pic6 .flip-card-back {
+    content: url('/assets/Gerontocracy-0.png')
+}
+
+#pic9 .flip-card-back,
+#pic8 .flip-card-back {
+    content: url('/assets/PostHumanismBall.png')
+}
