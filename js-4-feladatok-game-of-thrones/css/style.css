@@ -1,0 +1,58 @@
+.character {
+    min-width: 9vw;
+    float: left;
+    text-align: center;
+    max-height: 16.6vh;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+p,
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-image: url('/assets/site/mapblue.jpg');
+}
+
+main {
+    width: 80%;
+    height: 100%;
+}
+
+aside {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.highlighted {
+    color: red;
+}
+
+.picture {
+    width: 18vw;
+}
+
+#searchfield {
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
